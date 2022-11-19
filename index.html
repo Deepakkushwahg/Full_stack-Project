@@ -4,68 +4,184 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="https://kit.fontawesome.com/1a28c72721.js" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
     <title>MiniProject</title>
 </head>
 
 <body>
-    <div class="div0">
-        <span id="span1">
-            MyTicket
-            
-        </span>
-        <div id="login">
-            <a href="#" id="a-tag">LOGIN</a>
-            <img id="avtar" src="Images/avatar.png" alt="Login">
-        </div>
-    </div>
-    <div class="div1">
-        <nav>
-            <ul>
-                <li><a class="navBar" href="#">Home</a></li>
-                <li><a class="navBar" href="#about">About</a></li>
-                <li><a class="navBar" href="#">Bus Status</a></li>
-            </ul>
-        </nav>
-    </div>
-    <span class="span3">Welcome to Online Ticket Reservation System </span>
-    <div id="container">
-        <div id="bus">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id ipsam aut nostrum quam perspiciatis totam ducimus, quis necessitatibus? Veniam adipisci culpa molestiae distinctio fuga totam, maxime sequi iusto recusandae beatae quam velit ullam modi illo
-            dolores tempora consequatur in! Eos fuga doloribus ab dolore iste molestiae repudiandae aperiam neque delectus odit. Aspernatur sunt doloribus cum repellendus blanditiis, error quasi. Recusandae eligendi, consequuntur pariatur enim quis in
-            necessitatibus et voluptate quam sint tempore vitae ex delectus quas animi repudiandae illo eveniet itaque magnam commodi maiores dolorem non. Suscipit tenetur doloribus corrupti autem excepturi facilis sequi aperiam minus natus porro eligendi
-            animi voluptatum saepe reprehenderit iure modi voluptas voluptatem, a deserunt eaque atque beatae? Voluptatum placeat doloribus error eum illo, inventore quibusdam fuga perspiciatis reiciendis id minus ab praesentium ullam maxime accusantium.
-            Dignissimos consequuntur adipisci suscipit, recusandae totam odio repudiandae officia itaque veniam possimus laudantium id dolorem, placeat mollitia alias libero, necessitatibus hic! Libero obcaecati est, vel cumque, qui labore suscipit officiis
-            rerum quidem, quis facere tenetur recusandae. Laudantium sunt quis odio nesciunt aut alias? Inventore consectetur voluptas perspiciatis neque, dolorum magni aut doloremque impedit a pariatur voluptatem? Odit porro, esse, blanditiis obcaecati
-            quidem voluptas, eum perferendis facilis rerum aperiam eos. Placeat?
+    <section>
+        <div id="background">
+            <center>
+                <div id="navbarItems">
+                    <nav>
+                        <span id="span1"> MyTicket<i>.com</i></span>
+                        <ul id="sideMenu">
+                            <li><a class="navBar" href="#">Home</a></li>
+                            <li><a class="navBar" href="#about">About us</a></li>
+                            <li><a class="navBar" href="#">Services</a></li>
+                            <li><a class="navBar" href="#">Buses</a></li>
+                            <li><a class="navBar" href="#">Contact us</a></li>
+                            <li><a class="navBar" href="#" onclick="Login()">Login</a></li>
+                            <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+
+                        </ul>
+                        <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+                    </nav>
+                    <img id="avtar" src="Images/avatar.png" alt="Login" onclick="Login()">
+                </div>
+            </center>
+            <span class="span3"><marquee behavior="alternate" direction="left">Welcome to Online Ticket Reservation System</marquee> </span><br>
+            <span class="span-3">Welcome to Online Ticket Reservation System</span><br>
+
+
+            <div id="container1">
+                <div id="container1-width">
+                    <div id="container1-content">
+                        <h1><em style="color: green;">MyTicket.com</em> is India’s largest <br> online bus ticketing platform</h1><br> This has transformed bus travel in the country by bringing ease and convenience to millions of Indians who travel using
+                        buses. Founded in 2006, MyTicket.com is part of India’s leading online travel company MakeMyTrip Limited (NASDAQ: MMYT). By providing widest choice, superior customer service, lowest prices and unmatched benefits, MyTicket.com
+                        has served over 18 million customers. MyTicket.com has a global presence with operations across Indonesia, Singapore, Malaysia, Colombia and Peru apart from India.
+                    </div>
+                    <br><br>
+                    <span class="span1">
+                <a href="./UserLogin.html">Book Ticket</a>
+                </span>
+                </div>
+
+            </div>
+
+            <center>
+                <div id="container2">
+                    <div class="getInput">
+                        <div class="selectItem">
+                            From <br> <select name="From" class="select">
+                            <option value="">Select Destination</option>
+                            
+                        </select>
+                        </div>
+                        <div class="selectItem">
+                            To <br> <select name="To" class="select">
+                            <option value="">Select Destination</option>
+                        </select>
+                        </div>
+                        <div class="selectItem">
+                            When <br> <select name="When" class="select">
+                            <option value="">Set Date</option>
+                        </select>
+                        </div>
+                    </div>
+                    <div class="getInput">
+                        <div class="selectItem">
+                            Time <br> <select name="Time" class="select">
+                            <option value="">Select Time</option>
+                        </select>
+                        </div>
+                        <div class="selectItem">
+                            Seat <br> <select name="Seat" class="select">
+                            <option value="">Set Seat</option>
+                        </select>
+                        </div>
+                        <button type="submit" id="submit" onclick="OpenTform()">Submit Button</button>
+                    </div>
+                </div>
+            </center>
+
+            <div id="about">
+                <div id="about-content">
+                    <span style="color: orangered; font-weight:bold; font-size:22px">About MyTicket</span><br><br>
+                    <div>Enjoy the following exclusive features on the MyTicket.com Last Minute Booking - In a hurry to book a bus at the last minute? Choose the bus passing from your nearest boarding point and book in a few easy steps. Boarding Point Navigation
+                        - Never lose your way while travelling to your boarding point! Comprehensive Ticket Details- Everything that you need to make the travel hassle free - rest stop details, boarding point images, chat with co-passengers, wake-up alarm and much more!</div><br>
+                    <i class="fa-sharp fa-solid fa-circle-check"></i>
+                    <span style="margin-right: 50px;">Brilient Client Service</span>
+                    <i class="fa-sharp fa-solid fa-circle-check"></i>
+                    <span>User Experience</span><br><br>
+                    <i class="fa-sharp fa-solid fa-circle-check"></i>
+                    <span style="margin-right: 110px;">24/7 Support</span>
+                    <i class="fa-sharp fa-solid fa-circle-check"></i>
+                    <span>Free Consultations</span><br><br>
+                    <i class="fa-sharp fa-solid fa-circle-check"></i>
+                    <span>Quick Tips and Advice</span><br>
+                    <br>
+                    <button type="button" id="more-about-us">More About Us</button>
+                </div>
+                <div id="about-img"></div>
+            </div>
+
+            <div id="footer">
+                <div id="footer-content">
+                    <div id="handlers">
+                        <span id="span1"> MyTicket<i>.com</i></span><br><br>
+                        <div style="color: white; margin-left: 10px;">FREE Full Refund due to Medical Reasons: MyTicket.com brings an extraordinary offer in these tough times! Get full refund for domestic ticket in case you cancel it due to medical sickness. Best Part - There are ZERO extra charges
+                            for this service
+                        </div>
+                        <i class="fa-brands fa-square-facebook"></i>
+                        <i class="fa-brands fa-square-twitter"></i>
+                        <i class="fa-brands fa-square-instagram"></i>
+                        <i class="fa-brands fa-square-youtube"></i>
+                    </div>
+                    <div class="links-and-info">
+                        <h1 style="color: white;">Quick Links</h1><br>
+                        <div>
+                            <i class="fa-solid fa-angle-right"></i>
+                            <a class="a-tag" href="#navbarItems">Home</a></div>
+                        <div>
+                            <i class="fa-solid fa-angle-right"></i>
+                            <a class="a-tag" href="#about">About Us</a></div>
+                        <div>
+                            <i class="fa-solid fa-angle-right"></i>
+                            <a class="a-tag" href="#navbarItems">Services</a></div>
+                        <div>
+                            <i class="fa-solid fa-angle-right"></i>
+                            <a class="a-tag" href="#navbarItems">Login</a></div>
+                    </div>
+                    <div class="links-and-info" style="width: 280px;">
+                        <h1 style="color: white;">Contact Info</h1><br>
+                        <div>
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span class="contact-info">Jl. Mathura Delhi No.21, Goverdhan</span>
+                            <span class="contact-info" style="margin-left: 30px;">Chauraha, Mathura 281406</span>
+                        </div>
+                        <br>
+                        <hr><br>
+                        <div>
+
+                            <i class="fa-sharp fa-solid fa-phone"></i>
+                            <span class="contact-info">(+91) 9917852543</span>
+                        </div>
+                        <br>
+                        <hr><br>
+                        <div>
+                            <i class="fa-solid fa-envelope"></i>
+                            <span class="contact-info">myticket567@gmail.com</span>
+                        </div>
+                    </div>
+                </div>
+                <br><br>
+
+            </div>
 
         </div>
-        <div id="boxes">
-            <div class="div2">
-                <span class="span1">
-                <a href="./page1.html">Book Bus Ticket</a>
-                </span>
-                <br>
-            </div>
-            <div class="div2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque, voluptatem unde! Odit quia quod repudiandae saepe accusantium vero, eligendi cumque, id reiciendis voluptatem necessitatibus dolores deleniti odio, rerum nulla ipsa! Reiciendis
-                ipsum similique quaerat sapiente. Sit saepe quae tenetur. Rerum est ratione ab possimus voluptatum modi maxime earum tempore quam.</div>
-            <div class="div2">
-                <p class="p1">Comment :</p>
-                <textarea name="Comment" id="Text1" cols="50" rows="10" placeholder="Write your comment ...."></textarea>
-                <br>
-                <button id="postbutton">Post</button>
-            </div>
-        </div>
-    </div>
-    <div id="about">
-        <p>About us -</p>
-        <footer>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa facere inventore quae voluptas eos odio repudiandae numquam? Fugit aspernatur reprehenderit provident pariatur voluptate, porro deleniti excepturi ut? Eveniet ipsam explicabo veritatis
-            aliquam magni temporibus quaerat ipsa accusantium minima rerum, unde fuga possimus sed vel. Possimus in nobis cupiditate. Ratione labore, odio mollitia molestiae necessitatibus animi dicta ipsam rem sapiente? Voluptas eveniet harum fugit corrupti
-            exercitationem quibusdam ipsam ea? Vitae eum, voluptatem quos ipsum tempora iure at officiis iste explicabo ex, commodi excepturi magni perferendis? Asperiores rem aliquam illo blanditiis minus tempora excepturi eum dignissimos ullam, repellat
-            voluptatem in, provident nulla.</footer>
-    </div>
+    </section>
+
 
 </body>
+<script>
+    function openMenu() {
+        document.getElementById("sideMenu").style.right = "0";
+    }
+
+    function closeMenu() {
+        document.getElementById("sideMenu").style.right = "-200px";
+    }
+
+    function Login() {
+        window.open('UserLogin.html');
+    }
+
+    function OpenTform() {
+        window.open('BusTicket.html');
+    }
+</script>
 
 </html>
