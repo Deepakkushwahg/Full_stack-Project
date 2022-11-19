@@ -324,7 +324,7 @@ nav ul .fa-solid {
 }
 
 
-/* css for small screen */
+/* css for small laptops*/
 
 @media only screen and (max-width: 961px) {
     #span1 {
@@ -370,6 +370,9 @@ nav ul .fa-solid {
     }
 }
 
+
+/* css for tablet */
+
 @media only screen and (max-width:760px) {
     #container1 {
         justify-content: center;
@@ -401,7 +404,7 @@ nav ul .fa-solid {
         width: 70vw;
     }
     #submit {
-        font-size: 4vw;
+        font-size: 4.5vw;
     }
     #about {
         width: 80vw;
@@ -456,4 +459,48 @@ nav ul .fa-solid {
     }
 }
 
-@media only screen and (max-width:422px) {}
+
+/* css for mobile phones */
+
+@media only screen and (max-width:430px) {
+    .span-3 {
+        padding-top: 10px;
+    }
+    #container1 {
+        margin-top: 40px;
+        font-size: 5vw;
+        width: 99.4vw;
+    }
+    #container1-width {
+        width: 100%;
+        margin-left: 9vw;
+    }
+    #container2 {
+        margin-top: 100px;
+        width: 50%;
+    }
+    .select,
+    #submit {
+        width: 60vw;
+    }
+    #about {
+        width: 70vw;
+        height: 900px;
+        padding: 10px;
+    }
+    #about-content {
+        height: 700px;
+    }
+    #about-img {
+        width: 84vw;
+        margin-top: 40px;
+    }
+    #footer {
+        padding-top: 60px;
+        height: 720px;
+        padding-left: 10px;
+    }
+    .fa-brands {
+        font-size: 8vw;
+    }
+}
