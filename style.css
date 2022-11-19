@@ -462,7 +462,7 @@ nav ul .fa-solid {
 
 /* css for mobile phones */
 
-@media only screen and (max-width:430px) {
+@media only screen and (max-width:410px) {
     .span-3 {
         padding-top: 10px;
     }
